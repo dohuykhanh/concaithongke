@@ -13,6 +13,7 @@ import DieuHuong from "../../../components/DieuHuong/Dieuhuong"
 import VatTu from './VatTu1'
 import PhieuChuyen from './PhieuChuyen1'
 import ThongBaoChuyen from './ThongBaoChuyen'
+import "./Phieuchuyenvt1.css"
 
 
 
@@ -164,11 +165,12 @@ useEffect(() => {
 
 
   return (
-    <div>
+    <div className="firstcontainer">
+       <div>
     <nav>
       <div className="nav_box">
      
-      {nhatt && <h1 style={{color:"Azure"}}> <b><i>PHIEU DANG KY</i></b> </h1>}
+      {/* {nhatt && <h1 style={{color:"Azure"}}> <b><i>PHIEU DANG KY</i></b> </h1>} */}
     
         <span className="my_shop" onClick={() => setshow(true, setshoww(false), setshowww(false))}>
           sanpham
@@ -191,6 +193,7 @@ useEffect(() => {
 
       {showww && <PhieuChuyen bandau={bandau} setbandau={setbandau} cart={cart} setCart={setCart} handleChange={handleChange} />}
      
+      </div>
     </div>
   );
 };

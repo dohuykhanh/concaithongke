@@ -173,6 +173,8 @@ hanldeEditClose();
  
 
   return (
+
+    <div className="first-container">
     <article>
     
       {cart.map((item) => (
@@ -264,7 +266,10 @@ hanldeEditClose();
                     </Modal.Footer>
                 </Modal>
             </div>
+            
     </article>
+    </div>
+  
   );
 };
 

@@ -7,7 +7,7 @@
 }
 
 .nut {
-    background-color: #4CAF50;
+  
     /* Green */
     border: none;
     color: white;
@@ -16,11 +16,16 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 50%;
+    position: relative;
+    bottom: 10px;
+    
 }
 
-.modalContainer {
+.modalContainer  {
     display: flex;
+    border: none;
+    background-color: #18c6e1;
+    border-radius:20px ;
 }

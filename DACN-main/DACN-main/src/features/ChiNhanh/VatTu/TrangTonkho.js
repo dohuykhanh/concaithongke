@@ -4,6 +4,7 @@ import axios from "axios";
 import moment from 'moment';
 import styles from "./VatTu.module.css"
 import DieuHuong from "../../../components/DieuHuong/Dieuhuong"
+import ".././Viewxemhoadon.css"
 const Trangtonkho = ({DataTK,closemodal}) => {
 
     const [PO, setPO] = useState([]);
@@ -22,11 +23,11 @@ const Trangtonkho = ({DataTK,closemodal}) => {
     let nhh;
     console.log("kiem tra mang co bị gap đoi ko",soluong)
   return (
-    <div>
+    <div className="modalBackground">
 
    
-      <div>
-    
+      <div className="modalContainer">
+
             <div className='row'>
                 <div className='table-responsive'>
                     <table className='table table-striped table-hover table-bordered'>
@@ -61,10 +62,12 @@ const Trangtonkho = ({DataTK,closemodal}) => {
 
 
 
-
+            <div className={"nut"}>
+            <button  onClick={() => closemodal(false)}> X </button>
+            </div> 
             </div>
 
-            <button className={"nut"} onClick={() => closemodal(false)}> X </button>
+            
 
     </div>
   );

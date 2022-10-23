@@ -454,7 +454,7 @@ var Manggop=[]
                                 <th>Name</th>
                                 <th>SDT</th>
                                 <th>So luong hd</th>
-                                <th>Action</th>
+                                
                             </tr>
                         </thead>
                         <tbody>
@@ -463,7 +463,7 @@ var Manggop=[]
                                     <td>{item.hoten}</td>
                                     <td>{item.sdt}</td>
                                     <td>{item.SoLuongHD}</td>
-                                    <td>{item.IDnguoibanhang}</td>
+                                  
                                     <td style={{ minWidth: 190 }}>
                                         <Button size='sm' variant='primary' onClick={() => { handleViewShoww();setId(item._id) }}>View</Button>|
                                         <Button size='sm' variant='warning' onClick={()=> {handleEditShow(SetRowData(item),setsdt(item.sdt),sethoten(item.hoten),setId(item._id))}}>Edit</Button>|

@@ -5,10 +5,6 @@
     font-family: montserrat, sans-serif;
 }
 
-.chatbox_tingui__Mzywe {
-    width: calc(100% - -43px);
-}
-
 .chat {
     position: absolute;
     left: 0px;
@@ -37,22 +33,59 @@
     height: calc(100% - -38px);
     overflow: scroll;
     width: calc(100% - -43px);
+    display: flex;
+    flex-direction: column;
 }
-
-.khanh {
-    width: 800px;
-}
-
-.tingui {
+.tingui{
     color: black;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #45b6fe;
-    height: 38px;
+    border-radius:   10px 10px  10px 10px;
+    background-color:#45b6fe;
+    height: fit-content;
     width: fit-content;
     margin: 10px;
+    padding: 5px 10px;
+    display: flex;
     justify-content: center;
+    align-items: center;
+    /* justify-content: center; */
 }
 
-.fixformMess {
+.tinNhan{
+    color: red;
+    border-radius:   10px 10px  10px 10px;
+    background-color:#45b6fe;
+    height: fit-content;
+    width: fit-content;
+    margin: 10px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    /* justify-content: center; */
+}
+.tinNhan > p{
+    margin: 0;
+    padding: 0;
+}
+
+.tingui > p{
+    margin: 0;
+    padding: 0;
+}
+
+.fixformMess{
     width: 307px;
+    
+}
+/* .vitrichat{
+    background-color: aqua;
+    width: 500px;
+    position: relative;
+    left: 100px;
+} */
+.trchat{
+    /* width: 100%; */
+    /* position: relative; */
+    /* left: 158px; */
 }

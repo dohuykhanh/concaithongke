@@ -4,7 +4,7 @@ import { Button, Modal} from 'react-bootstrap'
 import axios from "axios";
 import moment from 'moment';
 import ReactToPrint, { useReactToPrint } from 'react-to-print';
-
+import "./Viewxemhoadon.css"
 
 
 
@@ -278,10 +278,10 @@ const Viewxemhoadon = ({ cart, setCart, handleChange,Data, setData ,closemodal, 
                     <table className='table table-striped table-hover table-bordered'>
                         <thead>
                             <tr>
-                                <th>Ngay Ban</th>
-                                <th>Gia</th>
+                                <th>Ngày bán</th>
+                                <th>Giá</th>
                                
-                                <th>Soluong san pham ban dc</th>
+                                <th>Số lượng</th>
                             </tr>
                         </thead>
                         <tbody> 
@@ -342,10 +342,12 @@ const Viewxemhoadon = ({ cart, setCart, handleChange,Data, setData ,closemodal, 
 
                 </div>
             </div>
-
-
-            <button className={"nut"} onClick={() => closemodal(false)}> X </button>
+            <div className={"nut"}>
+            <button  onClick={() => closemodal(false)}> X </button>
+            </div> 
+            
             </div>
+            
 </div>
 
 

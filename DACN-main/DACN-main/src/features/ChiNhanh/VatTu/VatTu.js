@@ -305,16 +305,18 @@ const ThongbaoTonKho = () => {
       <div>
             <div className='row'>
                 <div className='mt-5 mb-4'>
-                    {Xep && <Button variant='primary' onClick={() => { handlePostShow() }}><i className='fa fa-plu'></i>
+                    {Xep && <Button variant='primary' style={{margin:"5px"}} onClick={() => { handlePostShow() }}><i className='fa fa-plu'></i>
                         Thêm vật tư
                     </Button>}
-                    {Xep && <Button variant='primary' onClick={() => {  handleViewShowTK() }}><i className='fa fa-plu'></i>
+                    
+                    {Xep && <Button variant='primary' style={{margin:"10px"}} onClick={() => {  handleViewShowTK() }}><i className='fa fa-plu'></i>
                        Tồn Kho: {Soluongthongbaotonkho}
                     </Button>}
                     {Xep && <Button variant='primary' onClick={() => {  handleViewShowDK() }}><i className='fa fa-plu'></i>
                        Dang ky chuyen vt
                     </Button>}
-                </div>
+                    </div>
+               
             </div>
             <div className='row'>
                 <div className='table-responsive'>

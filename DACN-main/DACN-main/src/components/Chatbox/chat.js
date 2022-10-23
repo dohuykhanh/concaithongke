@@ -58,27 +58,45 @@ function chat() {
         }, [Loadtinnhan])
          // eslint-disable-next-line react-hooks/rules-of-hooks
 
-
+  // const handleChat = (tinnhan) => {
+    console.log(Data);
+  // }
   return (
     <div className={styles.chat}>
         <div className={styles.chatbox}>
         
        
-      
+        
         <div className={styles.messages}>
                             {Data.map((item) =>
-                                <tr className={styles.khanh} key={item._id}>
-                                  <div className={styles.tingui} >
+
+                                <div key={item._id} className={styles.trchat}>
+                                  
+                                  {/* <div className={styles.tingui} > */}
+                                    {item.NguoiNhan === localStorage.getItem('NguoiNhanTin')
+                                      ? 
+                                      <div className={styles.tinNhan}>
+                                      {/* <td> */}
+                                        <p 
+                                        // style={
+                                        // {position:"relative",top:"8px",display:"flex",color: "red",justifyContent:"center"}}
+                                        
+                                        >{item.NguoiNhan}: {item.TinhNhan}</p>
+                                        {/* </td> */}
+                                      </div>
+                                      : 
+                                      <div className={styles.tingui}>
+                                      {/* <td> */}
+                                        <p
+                                      // style={
+                                      //   {position:"relative",top:"8px",display:"flex",justifyContent:"center"}}
+                                        >{item.NguoiNhan}: {item.TinhNhan}</p>
+                                        {/* </td> */}
+                                      </div>
+                                    }
                                     
-                                    <h6 style={{position:"relative",top:"8px",display:"flex",justifyContent:"center"}}>{item.NguoiNhan}: {item.TinhNhan}</h6>
-                                    
-                                    
+                                    {/* </div>           */}
                                     </div>
-                                   <h10></h10> 
-
-
-                              
-                                    </tr>
                             )}
                             </div>
                             </div>              
